@@ -5,7 +5,7 @@ def generate_the_word(infile):
     return random_line
 
 def main():
-    infile = "random_words.text"
+    infile = "/usr/share/dict/words"
     print(generate_the_word(infile))
 
 main()
