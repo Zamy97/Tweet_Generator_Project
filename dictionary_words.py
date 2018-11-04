@@ -1,11 +1,45 @@
+import sys
 import random
 
-def generate_the_word(infile):
-    random_line = random.choice(open(infile).read().split('\n'))
-    return random_line
+# content is a list of words
+# words is the number of random words to return
+# returns a string of words divided by spaces
+def random_dictionary_word(content, words) :
+    # gets a random number between 0 & length of dictionary
+    # and adds word at that index to result string with a space at the end
+    result = ""
+    while (words > 0) :
+        index = random.randint(0, len(content) - 1)
+        result += content[index].strip() + " "
+        words -= 1
 
-def main():
-    infile = "/usr/share/dict/words"
-    print(generate_the_word(infile))
+    # once we have the number of words asked for:
+    # print(result)
+    return result
 
-main()
+if __name__ == "__main__":
+     # gets the number of words we need
+    words = int(sys.argv[1])
+    # opens & closes our dictionary and converts it to a list
+    with open('/usr/share/dict/words','r') as file:
+        content = list(file)
+
+    print(random_dictionary_word(content, words));
+
+
+
+
+
+
+
+# import random
+#
+# def generate_the_word(infile):
+#     random_line = random.choice(open(infile).read().split('\n'))
+#     return random_line
+#
+# def main():
+#     infile = "/usr/share/dict/words"
+#     print(generate_the_word(infile))
+#
+# main()
