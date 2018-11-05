@@ -3,15 +3,18 @@ import sys
 
 word_list = []
 
-with open("/usr/share/dict/words","r") as f:
-    for line in f:
+with open("random_words.text","r") as f:
+    for line in f.readlines():
         word_list.extend(line.split())
 
 def generate_the_word():
     random_word = random.choice(word_list)
     return random_word
 
+print(word_list)
 print(generate_the_word())
+print(" ".join([word_list[random.randrange(0, len(word_list))] for i in range(5)]))
+
 
 
 
