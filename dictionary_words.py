@@ -15,12 +15,12 @@ def generate_the_word():
     return random_word
 
 # This will put those range of words together and print it on the console
-print(" ".join([word_list[random.randrange(0, len(word_list))] for i in range(4)]))
+print(" ".join([word_list[random.randrange(0, len(word_list))] for i in range(int(sys.argv[1]))]))
 
 # TO do
     #Need to accept an argument from the user
     #show the number words words based on how many words the user wants to see
-
+# print(sys.argv)
 
 
 
