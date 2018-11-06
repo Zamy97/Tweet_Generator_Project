@@ -1,0 +1,1 @@
+The structure to represent this kind of data is called a histogram, which really just means a count of things by category. In Python, you can represent a histogram in a variety of ways using the different data structures available. Part of the challenge of this tutorial is how to design and use these data structures to create a histogram.
