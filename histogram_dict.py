@@ -28,11 +28,13 @@ def unique_words(find_most_common_words):
 
 unique_words("any")
 
-file_name = input("What file would you like to open? ")
+
+# next few lines asks the user which word they want to look up in the file_name# It'll show them how many times that word has been repeted in the file
+# file_name = input("What file would you like to open? ")
 with open("source_text.text", "r") as f:
     words = f.read().split()
-
-search_words = input("What words do you want to find? ").split(',')
+# Search for words in the splitted file
+search_words = input("What word do you want to find? ").split(',')
 search_words = [word.strip().lower() for word in search_words]
 #print(search_words)
 search_counts = dict.fromkeys(search_words, 0)
@@ -43,6 +45,6 @@ for word in words:
     if word in search_counts:
         search_counts[word] += 1
 
-print ('\nFrequency of word usage within', file_name + ":")
+# print ('\nFrequency of word usage within', file_name + ":")
 for word in search_words:
-    print("   {:<20s} / {} occurrences".format(word, search_counts[word]))
+    print("   {:<20s} / {} occuers 5 times in the file.".format(word, search_counts[word]))
