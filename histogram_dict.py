@@ -47,4 +47,22 @@ for word in words:
 
 # print ('\nFrequency of word usage within', file_name + ":")
 for word in search_words:
-    print("   {:<20s} / {} occuers 5 times in the file.".format(word, search_counts[word]))
+    print("   {:<20s} / {} occuers in the file.".format(word, search_counts[word]))
+
+
+
+"""
+Links I have Looked at:
+
+https://stackoverflow.com/questions/41011521/count-frequency-of-word-in-text-file-in-python
+https://stackoverflow.com/questions/9919604/efficiently-calculate-word-frequency-in-a-string
+https://stackoverflow.com/questions/21873511/python-word-frequency-count-program
+https://docs.python.org/3.7/library/collections.html
+https://codereview.stackexchange.com/questions/176862/most-common-words-in-a-text-file-of-about-1-1-million-words
+https://stackoverflow.com/questions/914382/how-can-i-count-unique-terms-in-a-plaintext-file-case-insensitively/930185#930185
+https://stackoverflow.com/questions/21852066/counting-word-frequency-and-making-a-dictionary-from-it
+https://github.com/woodward4422/tweet-generator/blob/master/histogram_list.py
+https://stackoverflow.com/questions/43272360/python-word-frequency-in-a-file
+https://stackoverflow.com/questions/47843707/count-frequency-of-item-in-a-list-of-tuples
+
+"""
