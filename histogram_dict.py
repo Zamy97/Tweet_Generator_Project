@@ -1,5 +1,5 @@
-import sys
 import collections
+from collections import Counter
 
 # Finds the number of repeted words in the file
 def find_most_common_words(textfile):
