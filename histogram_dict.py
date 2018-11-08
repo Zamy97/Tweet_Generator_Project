@@ -16,7 +16,7 @@ print(word_frequency)
 count = {}
 
 # Prints out how many times the unique words are in the file
-def unique_words(find_most_common_words):
+def unique_words():
     print ("The number of unique words in the file is: " + str(len(set(w.lower() for w in open("source_text.text").read().split()))))
     # for w in open("source_text.text").read().split():
     #     if w in count:
@@ -26,7 +26,7 @@ def unique_words(find_most_common_words):
     # for word,times in word_frequency.items():
     #     print(word,times)
 
-unique_words("any")
+unique_words()
 
 
 # next few lines asks the user which word they want to look up in the file_name# It'll show them how many times that word has been repeted in the file
@@ -66,3 +66,5 @@ https://stackoverflow.com/questions/43272360/python-word-frequency-in-a-file
 https://stackoverflow.com/questions/47843707/count-frequency-of-item-in-a-list-of-tuples
 
 """
+
+# Create a function that opens the file and creates the histogram so you can refrence them later on in your project
